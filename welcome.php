@@ -49,5 +49,16 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
     </p>
+    <h2>Browse from our various categories!</h2>
+<br>
+    <!--Product categories will be displayed here -->
+<div class="box col-md-3"><p><b>Mobiles</b></p><br> <img src="img/mobile.jpg" class="image"></div>
+<div class="box col-md-3"><p><b>Laptops</b></p><br> <img src="img/laptop.jpg" class="image"></div>
+<div class="box col-md-3"><p><b>TVs</b></p><br> <img src="img/tv.jfif" class="image"></div>
+<div class="box col-md-3"><p><b>Cameras</b></p><br> <img src="img/camera.jfif" class="image"></div>
+<div class="box col-md-3"><p><b>Gaming and accesories</b></p><br> <img src="img/gaming.jpg" class="image"></div>
+<div class="box col-md-3"><p><b>Headphones</b></p><br> <img src="img/headphones.jpg" class="image"></div>
+<div class="box col-md-3"><p><b>Speakers</b></p><br> <img src="img/speakers.png" class="image"></div>
+<div class="box col-md-3"><p><b>Projectors</b></p><br> <img src="img/projector.jpg" class="image"></div>
 </body>
 </html>
