@@ -41,6 +41,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Feedback</a></li>
+        <li><a href="#">Return</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
