@@ -12,6 +12,9 @@ div.wrapper {
   border: 2px solid black;
 }
 
+.navbar-nav{
+  font-size: 18px;
+}
 .ftitle {
   font-family: 'Roboto Mono', monospace;
   text-align: center;
