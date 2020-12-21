@@ -8,6 +8,7 @@
   <link rel="shortcut icon" type="image/png" href="img/logonew.png" />
   <!--css stylesheet link-->
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/footer.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!---font style-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -172,66 +173,7 @@
       </div>
     </div>
   </div>
-
-
 </body>
-
-
-
-<!-- Site footer -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-6">
-        <h6>About</h6>
-        <p class="text-justify">Our website allows customers to rent from various categories of electronic devices according to their needs and return them with care after Use! This Way You Can Rent Products on an Monthy affordable Fee and also get
-          Hands on The latest technologies in the market without Having to worry about Being On A Budget.
-        </p>
-      </div>
-
-      <div class="col-xs-6 col-md-3">
-        <h6>Categories</h6>
-        <ul class="footer-links">
-          <li><a href="">Mobiles</a></li>
-          <li><a href="">TV</a></li>
-          <li><a href="">Laptops</a></li>
-          <li><a href="">Cameras</a></li>
-          <li><a href="">Speakers</a></li>
-          <li><a href="">Gaming And Accesories</a></li>
-        </ul>
-      </div>
-
-      <div class="col-xs-6 col-md-3">
-        <h6>Quick Links</h6>
-        <ul class="footer-links">
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contact Us</a></li>
-          <li><a href="">Contribute</a></li>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Sitemap</a></li>
-        </ul>
-      </div>
-    </div>
-    <hr>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-sm-6 col-xs-12">
-        <p class="copyright-text">&copy; 2020
-          <a href="#">GadgetsOnWheels</a>.
-        </p>
-      </div>
-
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <ul class="social-icons">
-          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-
+ <!----footer link--->
+<?php include "footer.php"; ?>
 </html>
