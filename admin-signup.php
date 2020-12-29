@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $username_err = "Please enter a username.";
     } else{
         // Prepare a select statement
-        $sql = "SELECT id FROM users WHERE username = ?";
+        $sql = "SELECT adminid FROM admin WHERE username = ?";
 
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -65,7 +65,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
 
         // Prepare an insert statement
-        $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
+        $sql = "INSERT INTO admin (username, password) VALUES (?, ?)";
 
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -78,7 +78,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
-                header("location: login.php");
+                header("location: admin-login.php");
             } else{
                 echo "Something went wrong. Please try again later.";
             }
@@ -96,7 +96,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Sign Up</title>
+    <title>Admin</title>
     <link rel="stylesheet" href="CSS/style2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -107,25 +107,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"></a>
-      <img id="logo-img" src="img/logo1.png" width="80px" height="60px"alt="">
+      <a class="navbar-brand" href="index.php">Gadgets On Wheels!</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="index.php">Home</a></li>
+      <li class="active"><a href="index.php">Home</a></li>
       <li><a href="#">products</a></li>
       <li><a href="#">Feedback</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-        <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
-        <!--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>-->
     </ul>
   </div>
 </div>
 </nav>
 <br><br>
     <div class="wrapper">
-        <h2>Sign Up</h2>
-        <p>Please fill this form to create an account.</p>
+        <h2>Admin Sign Up</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Username</label>
