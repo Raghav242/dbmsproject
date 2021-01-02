@@ -3,15 +3,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Phones</title>
+    <title>TV</title>
 </head>
 <body>
   <div class="main">
-  <h1>Phones</h1>
+  <h1>TVs</h1>
   <?php echo $message; ?>
       <?php
         $query = "SELECT p_id,p_name,price,p_image,description FROM products,categories
-                  WHERE cat_id = cat_num and cat_id = 1";
+                  WHERE cat_id = cat_num and cat_id = 3";
         $result = $link->query($query);
         if($result->num_rows > 0){
           while($rows = $result->fetch_assoc()){

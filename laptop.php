@@ -3,15 +3,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Phones</title>
+    <title>Laptops</title>
 </head>
 <body>
   <div class="main">
-  <h1>Phones</h1>
+  <h1>Laptops</h1>
   <?php echo $message; ?>
       <?php
         $query = "SELECT p_id,p_name,price,p_image,description FROM products,categories
-                  WHERE cat_id = cat_num and cat_id = 1";
+                  WHERE cat_id = cat_num and cat_id = 2";
         $result = $link->query($query);
         if($result->num_rows > 0){
           while($rows = $result->fetch_assoc()){
@@ -22,7 +22,7 @@
               $des = $rows['description'];
               ?>
             <div class="box col-md-3"><i><p id="name"><b><?php echo $name; ?></b></p></i>
-              <img src="<?php echo $image;?>" name="" class="" style="width: 150px; height: 150px;"><br>
+              <img src="<?php echo $image;?>" name="" class="" style="width: 150px; height: 150px;">
               <p><?php echo "Rs: " ,$price, " / month"; ?></p>
               <p><?php echo "Description: " ,$des; ?></p>
               <button class="button">Add to Cart</button>
