@@ -49,14 +49,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <h2>Browse from our various categories!</h2>
 <br>
     <!--Product categories will be displayed here -->
-<div class="box col-md-3"><p><b>Mobiles</b></p><br> <img src="img/mobile.jpg" class="image"></div>
-<div class="box col-md-3"><p><b>Laptops</b></p><br> <img src="img/laptop.jpg" class="image"></div>
-<div class="box col-md-3"><p><b>TVs</b></p><br> <img src="img/tv.jfif" class="image"></div>
-<div class="box col-md-3"><p><b>Cameras</b></p><br> <img src="img/camera.jfif" class="image"></div>
-<div class="box col-md-3"><p><b>Gaming and accesories</b></p><br> <img src="img/gaming.jpg" class="image"></div>
-<div class="box col-md-3"><p><b>Headphones</b></p><br> <img src="img/headphones.jpg" class="image"></div>
-<div class="box col-md-3"><p><b>Speakers</b></p><br> <img src="img/speakers.png" class="image"></div>
-<div class="box col-md-3"><p><b>Projectors</b></p><br> <img src="img/projector.jpg" class="image"></div>
-
+<div id="products">
+  <a href = "phone.php"><div class="box col-md-3"><p><b>Mobiles</b></p><br> <img src="img/mobile.jpg" class="image"></div></a>
+  <a href = "laptop.php"><div class="box col-md-3"><p><b>Laptops</b></p><br> <img src="img/laptop.jpg" class="image"></div></a>
+  <a href = "tv.php"><div class="box col-md-3"><p><b>TVs</b></p><br> <img src="img/tv.jfif" class="image"></div></a>
+  <a href = "camera.php"><div class="box col-md-3"><p><b>Cameras</b></p><br> <img src="img/camera.jfif" class="image"></div></a>
+  <a href = "game.php"><div class="box col-md-3"><p><b>Gaming and accesories</b></p><br> <img src="img/gaming.jpg" class="image"></div></a>
+  <a href = "headphone.php"><div class="box col-md-3"><p><b>Headphones</b></p><br> <img src="img/headphones.jpg" class="image"></div></a>
+  <a href = "speaker.php"><div class="box col-md-3"><p><b>Speakers</b></p><br> <img src="img/speakers.png" class="image"></div></a>
+  <a href = "projector.php"><div class="box col-md-3"><p><b>Projectors</b></p><br> <img src="img/projector.jpg" class="image"></div></a>
+</div>
 </body>
 </html>
