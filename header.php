@@ -7,13 +7,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
-if(!empty($_COOKIE['item'])){
-  $cart_item .= count($_COOKIE["item"]);
 
-}
-if (isset($_GET['action']) && $_GET['action'] == 'cookie'){
-  header("location: cart.php");
-}
 
 
 
@@ -40,17 +34,20 @@ $message="";
 <body>
 
 <div class="navba">
-  <a href="#">Gadgets On Wheels</a>
+  <a href="#">
+  <img src="img/logonew.png" width="50px" style="margin-right: 30px;"> </a>
   <a href="welcome.php">Home</a>
-  <a href="#contact">Feedback</a>
+  <a  href="checkout.php">Checkout</a>
+  <a  href="feedback.php">Feedback</a>
+  
   <ul class="nav navbar-nav navbar-right">
-    <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;<?php echo htmlspecialchars($_SESSION["username"]); ?></a></li> &nbsp;
+    <li>
+    
+    <a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;<?php echo htmlspecialchars($_SESSION["username"]); ?></a></li> &nbsp;
  
  <li class="nav-item">
-  <a href="?action=cookie" class="nav-link">
-  <i class="fa fa-shopping-cart" aria-hidden="true">
-  <span class="badge badge-light m-1"><?php if(!empty($cart_item)){echo $cart_item;}else{echo "0";}; ?>
-  
+ <a class="nav-link" href="cart.php">
+ <i class="fas fa-shopping-cart"></i> <span id="cart-item" class="badge badge-danger" style="color:yellow;">1</span></a>
   
   
   </span>
@@ -65,7 +62,7 @@ $message="";
   
   </ul>
 </div>
-<div class="sidenav">
+<div class="sidenav" style="margin-top: 70px;">
   <a id="cat" href="#">Categories</a><br>
   <a href="phone.php">Mobiles</a>
   <a href="laptop.php">Laptops</a>

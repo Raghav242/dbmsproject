@@ -30,7 +30,7 @@
 
 </head>
 
-<body>
+<body >
   <!--navbar-->
   <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container-fluid">
@@ -40,8 +40,8 @@
       </div>
       <ul class="nav navbar-nav">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Feedback</a></li>
+   
+        <li><a href="feedback.php">Feedback</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>

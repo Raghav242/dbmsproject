@@ -18,14 +18,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!--font awesome icon link--->
     <script src="https://kit.fontawesome.com/db47262ed8.js" crossorigin="anonymous"></script>
+
     <!--bootstrap links-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!--font awesome links-->
     <script src="https://kit.fontawesome.com/db47262ed8.js" crossorigin="anonymous"></script>
+
+
 </head>
+
 <body>
+
+
     <!-- Site footer -->
     <footer class="site-footer">
         <div class="container">
@@ -36,6 +42,7 @@
                         Hands on The latest technologies in the market without Having to worry about Being On A Budget.
                     </p>
                 </div>
+
                 <div class="col-xs-6 col-md-3">
                     <h6>Categories</h6>
                     <ul class="footer-links">
@@ -45,10 +52,9 @@
                         <li><a href="">Cameras</a></li>
                         <li><a href="">Speakers</a></li>
                         <li><a href="">Gaming And Accesories</a></li>
-                        <li><a href="">Headphones</a></li>
-                        <li><a href="">Projectors</a></li>
                     </ul>
                 </div>
+
                 <div class="col-xs-6 col-md-3">
                     <h6>Quick Links</h6>
                     <ul class="footer-links">
@@ -69,6 +75,7 @@
                         <a href="#">GadgetsOnWheels</a>.
                     </p>
                 </div>
+
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <ul class="social-icons">
                         <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -80,5 +87,7 @@
             </div>
         </div>
     </footer>
+
 </body>
+
 </html>

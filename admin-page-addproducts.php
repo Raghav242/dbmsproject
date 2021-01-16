@@ -37,6 +37,8 @@ if(isset($_POST['submit'])){
 <head>
     <meta charset="UTF-8">
     <title>Gadgets On Wheels</title>
+    <!--icon link-->
+  <link rel="shortcut icon" type="image/png" href="img/logonew.png" />
     <link rel="stylesheet" href="CSS/style4.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">

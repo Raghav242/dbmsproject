@@ -35,8 +35,10 @@ if(isset($_POST['submit']) && isset($_POST['id'])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gadgets On Wheels</title>
+    <title>Admin Panel</title>
     <link rel="stylesheet" href="CSS/style3.css">
+    <!--icon link-->
+  <link rel="shortcut icon" type="image/png" href="img/logonew.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

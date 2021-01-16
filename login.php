@@ -93,27 +93,45 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-      <link rel="stylesheet" href="CSS/style2.css">
+      <link rel="stylesheet" href="CSS/login.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+
+<!--icon link-->
+<link rel="shortcut icon" type="image/png" href="img/logonew.png" />
+    
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/23412c6a8d.js">
+
+    </script>
 </head>
+<body>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
 <div class="container-fluid">
   <div class="navbar-header">
+    
     <a class="navbar-brand" href="#"></a>
-    <img id="logo-img" src="img/logo1.png" width="80px" height="60px"alt="">
+        <img src="img/logonew.png" width="80px" style="margin-right: 30px;">
   </div>
   <ul class="nav navbar-nav">
-    <li><a href="index.php">Home</a></li>
-    <li><a href="#">products</a></li>
+    <li class="active"><a href="index.php">Home</a></li>
+   
     <li><a href="#">Feedback</a></li>
   </ul>
 </div>
 </div>
 </nav>
 <br><br>
+
+
+
+<div class="bg-image">
     <div class="wrapper">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
@@ -135,5 +153,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Administrator? <a href="admin-login.php">Login here</a>.</p>
         </form>
     </div>
+    </div>
 </body>
 </html>
+
+
