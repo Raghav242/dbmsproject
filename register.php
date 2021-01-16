@@ -104,22 +104,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"></a>
-      <img id="logo-img" src="img/logo1.png" width="80px" height="60px"alt="">
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="index.php">Home</a></li>
-      <li><a href="#">products</a></li>
-      <li><a href="#">Feedback</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-        <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
-        <!--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>-->
-    </ul>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+  <div class="navbar-header">
+    
+    <a class="navbar-brand" href="#"></a>
+        <img src="img/logonew.png" width="80px" style="margin-right: 30px;">
   </div>
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="index.php">Home</a></li>
+   
+    <li><a href="#">Feedback</a></li>
+  </ul>
+</div>
 </div>
 </nav>
 <br><br>
